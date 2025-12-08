@@ -3,6 +3,8 @@ import Link from "next/link"
 import Image from "next/image";
 import {motion} from "framer-motion"
 import { useState } from "react";
+import NavLink from "./NavLink";
+
 const NavBar = () =>{
     
     const links = [
@@ -15,12 +17,12 @@ const NavBar = () =>{
     const [open,setOpen]=useState(false)
 
     return(
-        <div className='h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48'>
+        <div className='h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl'>
             
             <div className="hidden md:flex gap-5 flex-1">
                 {links.map(link=>(
-                        <Link href={link.url} key={link.title}>{link.title}</Link>
-                    ))}
+                    <NavLink link={link} key={link.title}/>
+                ))}
             </div>
 
             {/*LOGO */}
@@ -34,7 +36,7 @@ const NavBar = () =>{
             </motion.div>
             </div>
             
-            {/*PROFILE LINKS */}
+            {/* PROFILE LINKS */}
             <div className="hidden md:flex gap-7 flex-1 justify-end">
                 <Link href="https://www.linkedin.com/in/abhinavkrishna-b-cs/">
                     <Image src="/linkedin.png" alt="LinkedIn logo" width={27} height={27}/>

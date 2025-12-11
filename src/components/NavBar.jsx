@@ -80,7 +80,7 @@ const NavBar = () =>{
 
             {/*LOGO */}
             <div className="flex-1 flex justify-center">
-            <motion.div className="w-12 h-12 bg-gray-800 text-white flex items-center justify-center rounded-full text-xl font-bold"
+            <motion.div className="w-16 h-16 bg-gray-800 text-white flex items-center justify-center rounded-full text-xl font-bold"
                 whileHover={{
                     backgroundColor : ["#121212", "rgba(131,58,180,1)","rgba(253,29,29,1)","rgba(252,176,69,1)","rgba(131,58,180,1)", "#121212"],
                     transition:{duration:1,repeat:Infinity}

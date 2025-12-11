@@ -1,7 +1,10 @@
+"use client"
 import Image from "next/image";
+import {motion} from "framer-motion";
 
 const Homepage = () => {
   return (
+    <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0vh" }} transition={{ duration: 1 }}>
     <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-10 lg:py-0">
 
       {/* IMAGE */}
@@ -39,6 +42,7 @@ const Homepage = () => {
       </div>
 
     </div>
+    </motion.div>
   );
 };
 

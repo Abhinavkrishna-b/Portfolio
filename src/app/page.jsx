@@ -5,13 +5,13 @@ import {motion} from "framer-motion";
 const Homepage = () => {
   return (
     <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0vh" }} transition={{ duration: 1 }}>
-    <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-10 lg:py-0">
+    <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-10 lg:py-0 overflow-scroll">
 
       {/* IMAGE */}
       <div className="w-full lg:w-1/2 flex justify-center items-center mb-10 lg:mb-0">
         <div className="relative w-60 h-60 sm:w-72 sm:h-72 lg:w-[400px] lg:h-[400px]">
           <Image 
-            src="/developer-pic-1.png" 
+            src="/developer-pic-2.png" 
             alt="dev pic" 
             fill 
             className="object-contain"

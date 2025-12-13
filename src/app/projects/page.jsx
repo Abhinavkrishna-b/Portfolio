@@ -72,7 +72,7 @@ const PortfolioPage = () => {
                   <div className="relative w-full max-w-[500px] h-[250px] md:h-[350px]">
                     <Image 
                       src={item.img} 
-                      alt="" 
+                      alt={item.title} 
                       fill 
                       className="object-cover rounded" 
                     />

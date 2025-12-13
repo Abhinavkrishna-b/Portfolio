@@ -32,12 +32,21 @@ const Homepage = () => {
         </p>
 
         <div className="flex gap-4 mt-4">
-          <button className="px-5 py-3 ring-1 ring-black bg-black text-white rounded-lg">
-            View my work
-          </button>
-          <button className="px-5 py-3 ring-1 ring-black rounded-lg">
+          <a
+            href="/ABHINAV_KRISHNA_B_RESUME.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 ring-1 ring-black bg-black text-white rounded-lg inline-block"
+          >
+            Resume
+          </a>
+
+          <a
+            href="/contact"
+            className="px-5 py-3 ring-1 ring-black rounded-lg inline-block"
+          >
             Contact Me
-          </button>
+          </a>
         </div>
       </div>
 

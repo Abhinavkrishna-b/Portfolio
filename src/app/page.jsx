@@ -22,11 +22,11 @@ const Homepage = () => {
       {/* TEXT */}
       <div className="w-full lg:w-1/2 flex flex-col gap-6 justify-center max-w-xl">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-          Hi, I'm Abhinav Krishna B <br /> Turning Vision Into Reality With Code
+          Hi, I&apos;m Abhinav Krishna B <br /> Turning Vision Into Reality With Code
         </h1>
 
         <p className="text-base md:text-lg">
-          Hi there! I'm Abhinav Krishna B currently pursuing my Computer Science and Engineering 
+          Hi there! I&apos;m Abhinav Krishna B currently pursuing my Computer Science and Engineering 
           degree at Kongu Engineering College. I am passionate about developing innovative and 
           impactful projects.
         </p>
